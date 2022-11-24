@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body class="flex" id="body">
+    <header class="header">
+      <img src="images/logo.svg" alt="logo" class="logo" />
+    </header>
+    <main class="flex">
+      <section class="text-sect flex">
+        <div class="h1-para flex">
+          <h1 class="h1">We are launching <span class="soon">soon!</span></h1>
+          <p class="para">Subscribe and get notified</p>
+        </div>
+        <form novalidate id="form" class="flex">
+          <div class="flex email-errorText">
+            <input
+            type="email"
+            name="email"
+            size="25"
+            class="input"
+            id="email"
+            placeholder="Your email address..."
+            pattern="[a-z0-9._%+-]+@[gmail]+\.[com]{2,4}$"
+            required
+          />
+          <span id="error-text" aria-live="polite"></span>
+          </div>
+          <input
+            type="submit"
+            class="input"
+            id="submit-btn"
+            value="Notify Me"
+          />
+        </form>
+      </section>
+
+      <section class="img-sect flex">
+        <img
+          src="images/illustration-dashboard.png"
+          class="illustration-img"
+          alt="illustration-dashboard"
+        />
+      </section>
+
+      <section class="icon-sect flex">
+        <div class="icon-div flex">
+          <i id="fa-fw" class="fab fa-facebook-f fa-1x fa-fw"></i>
+          <i id="fa-fw" class="fab fa-twitter fa-1x fa-fw"></i>
+          <i id="fa-fw" class="fab fa-instagram fa-1x fa-fw"></i>
+        </div>
+        <small class="copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </small>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://macchristo.github.io/Personal-site-1/"
+          >Macaulay Omoikhoje De-great</a
+        >.
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/bfb745bc9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
