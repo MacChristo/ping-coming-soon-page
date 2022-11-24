@@ -121,7 +121,7 @@ main {
     background-color: var(--Blue--);
     cursor: pointer;
 }
-#fa-fw {
+#fa-fw1, #fa-fw2, #fa-fw3 {
     width: 100%
 }
 
